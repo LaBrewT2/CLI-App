@@ -56,49 +56,6 @@ function buildHtmlCard(memberType, name, id, email, propertyValue) {
 // `output` folder. You can use the variable `outputPath` above target this location.
 // Hint: you may need to check if the `output` folder exists and create it if it
 // does not.
-var teamList = [];
-const managerQuestions = [
-    {
-        type: "input",
-        name: "name",
-        message: "Enter manager name:",
-        validate: async (input) => {
-            if (input == "" || /\s/.test(input)) {
-                return "Please enter first or last name.";
-            }
-            return true;
-        }
-    },
-    {
-        type: "input",
-        name: "email",
-        message: "Enter manager's email:",
-        validate: async (input) => {
-            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(input)) {
-                return true;
-            }
-            return "Please enter a valid email address.";
-        }
-    },
-    {
-        type: "input",
-        name: "officeNum",
-        message: "Enter office number:",
-        validate: async (input) => {
-            if (isNaN(input)) {
-                return "Please enter a number";
-            }
-            return true;
-        }
-    },
-    {
-        type: "list",
-        name: "hasTeam",
-        message: "Do you have any team members?",
-        choices: ["Yes", "No"]
-    }
-]
-
 
 // HINT: each employee type (manager, engineer, or intern) has slightly different
 // information; write your code to ask different questions via inquirer depending on
