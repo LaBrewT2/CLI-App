@@ -9,7 +9,7 @@ const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
-const teamMembers = []
+const 
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
@@ -201,6 +201,6 @@ function createTeam() {
     }
 }
 
-module.exports = outputPath
+module.exports = teamMembers
 
 createTeam();

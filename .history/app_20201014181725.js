@@ -201,6 +201,6 @@ function createTeam() {
     }
 }
 
-module.exports = outputPath
+module.exports = teamMembers
 
 createTeam();
