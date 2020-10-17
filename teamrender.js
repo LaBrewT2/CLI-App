@@ -1,12 +1,5 @@
-const path = require("path");
-const fs = require("fs");
-const apps = require("./app");
-var teamMembers = apps.teamMembers;
-
-
-
 // variable for establishing location of templates
-const templatesDir = path.resolve(__dirname, "../Template-Engine-Employee-Summary/templates");
+const templatesDir = path.resolve(__dirname, "../CLI-App/template");
 
 // Function to render the team info
 const render = (teamMembers) => {
@@ -84,5 +77,13 @@ const renderMain = html => {
     return template.replace(pattern, value);
   };
 
+
+
+
+
+
+
+
+  
 
 module.exports = render;
